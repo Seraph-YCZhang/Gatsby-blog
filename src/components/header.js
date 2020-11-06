@@ -1,7 +1,7 @@
 import { Link, graphql,  useStaticQuery } from "gatsby"
 import React from "react"
 import style from "./header.module.scss"
-
+import logo from './logo.png'
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -14,7 +14,10 @@ const Header = () => {
   `)
   return (
     <nav className={style.header}>
+      <div style={{display:'flex', alignItems:'center'}}>
+      <img src={logo} className={style.logo} alt='YC'/>
       <Link className={`${style['mainTitle']}`} to="/">{data.site.siteMetadata.author}</Link>
+      </div>
       <ul className={style['navBar']}>
         <li>
           <Link className={style.navItem} activeClassName={style.activeNavItem} to="/about-me">About Me</Link>

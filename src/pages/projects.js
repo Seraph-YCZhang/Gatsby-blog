@@ -12,7 +12,7 @@ const projects = [
     description: "Python",
   },
   {
-    title: "Advetisement System",
+    title: "Advertisement System",
     description: "Java/ SpringCloud",
   },
   {
