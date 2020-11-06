@@ -11,12 +11,28 @@
     margin: 0;
     padding: 0;
     li {
+      position: relative;
       margin: 1rem 0;
       // padding-left: 2em;
       &::marker {
         color: blue;
         font-size: 1.2em;
       }
+    }
+    li:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+    li::before {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      width: 0%;
+      content: '';
+      background-color: #999999;
+      transition: all ease-in-out 0.4s;
+      height: 5px;
     }
 
     a{
