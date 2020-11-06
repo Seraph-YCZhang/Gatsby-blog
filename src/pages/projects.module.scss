@@ -68,7 +68,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
+  background-repeat: no-repeat;
   height: 100%;
 }
