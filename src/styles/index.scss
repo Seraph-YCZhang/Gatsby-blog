@@ -1,0 +1,9 @@
+$main-font: "Raleway";
+$shallow-bg: "#f5f5f5";
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: $main-font;
+  margin: 0;
+}
