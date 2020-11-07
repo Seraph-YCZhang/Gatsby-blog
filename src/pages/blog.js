@@ -33,14 +33,17 @@ export default function Blog() {
         <h1>Blogs</h1>
         <FullDiv className={styles.postList}>
           <ul>
-            {data.allMarkdownRemark.edges.map(tmp => (
-              <li key={tmp.node.id}>
-                <Link to={`/blog/${tmp.node.fields.slug}`}>
-                  <h2>{tmp.node.frontmatter.title}</h2>
+            {data.allMarkdownRemark.edges.map((tmp, idx) => (
+              <>
+                <li key={tmp.node.id}>
 
-                  <p>{tmp.node.frontmatter.date}</p>
-                </Link>
-              </li>
+                  <Link to={`/blog/${tmp.node.fields.slug}`}>
+                    <h2>                  <sub>{idx}</sub>{tmp.node.frontmatter.title}</h2>
+
+                    <p>{tmp.node.frontmatter.date}</p>
+                  </Link>
+                </li>
+              </>
             ))}
           </ul>
         </FullDiv>
