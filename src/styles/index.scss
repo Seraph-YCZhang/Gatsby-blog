@@ -7,3 +7,7 @@ body {
   font-family: $main-font;
   margin: 0;
 }
+button:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+}
