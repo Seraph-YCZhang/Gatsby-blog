@@ -44,7 +44,7 @@ const Home = () => {
       <div style={containerStyle} ref={myRef}>
         <div style={innerStyle}>
           <h1 style={titleStyle}>
-            Hi, here is Yuchen. <br />A software engineer specialized in both
+            Hi, here is Yuchen. <br />A software engineer can work in both
             front-end and back-end.{" "}
           </h1>
           <button style={btnStyle} onClick={()=>navigate(`/about-me`)}>Know More</button>
