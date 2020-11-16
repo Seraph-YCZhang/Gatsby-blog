@@ -49,27 +49,27 @@
       width: 0%;
       content: '';
       background-color: #999999;
-      transition: all ease-in-out 0.4s;
+      transition: all ease-in 0.4s;
       height: 5px;
     }
 
     a{
       text-decoration: none;
-      color: #999999;
+      color: #f4f4f4;
       display: block;
       padding: 1rem;
-      background: #f4f4f4;
+      border-bottom: 5px solid #f4f4f4;
       h2 {
         margin-bottom: 0;
       }
       p {
-        color: #777777;
+        color: #f4f4f4;
         font-size: .8rem;
         font-style: italic;
       }
       &:hover {
         transition: all ease-in 0.2s;
-        background: #fff;
+        // background: #fff;
         h2 {
           font-weight: 700;
         }

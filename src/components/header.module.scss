@@ -3,18 +3,21 @@
   min-width: 100vw;
   // padding-bottom: 2rem;
   text-align: center;
+  border-bottom: 5px solid #04c2c9;
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
   display: inline-block;
-  height: 150px;
+  height: 6rem;
 }
 .mainTitle {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
   color: #000000;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
 
 }
 
@@ -28,11 +31,14 @@
   margin-left: 3.5rem;
   transition: all ease-in-out 0.5s;
   cursor: pointer;
+  @media screen and (max-width: 991.98px){
+    margin-left: 1.5rem;
+  }
 }
 
 .nav-item::before {
   position: absolute;
-  display: block;
+  display: inline-block;
   top: 0;
   width: 0%;
   content: '';
@@ -57,11 +63,14 @@
 
 .navBar {
   color: gainsboro;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  
+  align-self: flex-end;
+  font-weight: 700;
+  justify-content: flex-end;
   margin: 0;
+  padding-right:2rem;
   // padding: 0;
-  border-bottom: 5px solid #04c2c9;
+
   list-style-type: none;
 }
