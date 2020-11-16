@@ -1,13 +1,16 @@
 import React, { useRef } from "react"
 import Head from "../components/head"
 import Layout from "../components/layout"
+import Project from "../components/project"
 import { useScrollTo } from "../hooks/useScrollTo"
 import styles from "./projects.module.scss"
+import crwn from "../../static/crwn.png"
+import inv from "../../static/invub.png"
 const projects = [
   {
     title: "E-Commerce Website",
     description: "React/ Redux/ Firebase",
-    bg: "https://i.ibb.co/qrZMKGj/crwn.png",
+    bg: crwn,
   },
   {
     title: "Wechat Crawler",
@@ -23,7 +26,7 @@ const projects = [
   {
     title: "Invenst Club Website",
     description: "Javascript/ PHP/ MySQL",
-    bg: "https://i.ibb.co/5LwNRzb/invub.png",
+    bg: inv,
   },
 ]
 const Projects = () => {
@@ -35,16 +38,7 @@ const Projects = () => {
       <div className={styles.container} ref={myRef}>
         <div className={styles.innerContainer}>
           {projects.map((proj, idx) => (
-            <div className={styles.projectContainer} key={idx}>
-              <div className={styles.show}>
-                <div>{proj.title}</div>
-                <div>{proj.description}</div>
-              </div>
-              <div
-                className={styles.bg}
-                style={{ backgroundImage: `url('${proj.bg}')` }}
-              />
-            </div>
+            <Project proj={proj} />
           ))}
         </div>
       </div>

@@ -12,7 +12,12 @@ const AboutMe = () => {
       <Head title="About" />
       <div className={styles.container} ref={myRef}>
         <h1>About Me</h1>
-        <h2>Hi there! Currently I am working as a full stack engineer!</h2>
+        <h2>
+          I got my M.S from University at Buffalo majoring in Computer Science.
+          Before that, I obtained M.E from Sichuan University with Software
+          Engineer as my major, and Biology as my minor.
+        </h2>
+        <h2>And now! Currently I am working as a full stack engineer!</h2>
         <h3>
           The tech stack I am using is React.js <FaReact /> and Node.js
           <FaNodeJs />

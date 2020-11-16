@@ -1,7 +1,7 @@
-import { Link, graphql,  useStaticQuery } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import React from "react"
 import style from "./header.module.scss"
-import logo from './logo.png'
+import logo from "../../static/favicon.ico"
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -14,22 +14,48 @@ const Header = () => {
   `)
   return (
     <nav className={style.header}>
-      <div style={{display:'flex', alignItems:'center'}}>
-      <img src={logo} className={style.logo} alt='YC'/>
-      <Link className={`${style['mainTitle']}`} to="/">{data.site.siteMetadata.author}</Link>
+      <div style={{ display: "flex", alignItems: "center", marginLeft:'2rem' }}>
+        <img src={logo} className={style.logo} alt="YC" />
+        <Link className={`${style["mainTitle"]}`} to="/">
+          {data.site.siteMetadata.author}
+        </Link>
       </div>
-      <ul className={style['navBar']}>
+      <ul className={style["navBar"]}>
         <li>
-          <Link className={style.navItem} activeClassName={style.activeNavItem} to="/about-me">About Me</Link>
+          <Link
+            className={style.navItem}
+            activeClassName={style.activeNavItem}
+            to="/about-me"
+          >
+            About Me
+          </Link>
         </li>
         <li>
-          <Link className={style.navItem} activeClassName={style.activeNavItem} to="/blog">Blog</Link>
+          <Link
+            className={style.navItem}
+            activeClassName={style.activeNavItem}
+            to="/blog"
+          >
+            Blog
+          </Link>
         </li>
         <li>
-          <Link className={style.navItem} activeClassName={style.activeNavItem} to="/projects">Projects</Link>
+          <Link
+            className={style.navItem}
+            activeClassName={style.activeNavItem}
+            to="/projects"
+          >
+            Projects
+          </Link>
         </li>
         <li>
-          <Link className={style.navItem} activeClassName={style.activeNavItem} to="/resume">Resume</Link>
+          <Link
+            className={style.navItem}
+            activeClassName={style.activeNavItem}
+            to="/resume"
+          >
+            Resume
+          </Link>
         </li>
       </ul>
     </nav>
