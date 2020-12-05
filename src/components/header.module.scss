@@ -1,11 +1,11 @@
 .header {
   width: 100%;
-  min-width: 100vw;
-  // padding-bottom: 2rem;
-  text-align: center;
-  border-bottom: 5px solid #04c2c9;
-  display: flex;
-  justify-content: space-between;
+    min-width: 100vw;
+    text-align: center;
+    box-shadow: 0px 20px 35px rgba(62, 81, 81, 0.6);
+    padding-top: 1rem;
+    position: relative;
+    display: flex;
 }
 .logo {
   display: inline-block;
@@ -42,7 +42,8 @@
   top: 0;
   width: 0%;
   content: '';
-  background-color: #04c2c9;
+  // background-color: #04c2c9;
+  background-color: #3e5151;
   transition: all ease-in-out 0.4s;
   height: 5px;
 }
