@@ -1,5 +1,6 @@
 import { navigate } from "gatsby"
 import React, { useRef } from "react"
+import { FiArrowRight } from "react-icons/fi"
 import Head from "../components/head"
 import Layout from "../components/layout"
 import { useScrollTo } from "../hooks/useScrollTo"
@@ -22,18 +23,20 @@ const innerStyle = {
 }
 const titleStyle = {
   maxWidth: "100%",
-  lineHeight:"3.5rem"
+  lineHeight: "3.5rem",
 }
 const btnStyle = {
-  display: "block",
+  display: "flex",
   textDecoration: "none",
+  position: "relative",
   color: "#fff",
-  outline:'none',
-  cursor:'pointer',
+  outline: "none",
+  cursor: "pointer",
   padding: "1rem 2rem",
   backgroundColor: "#252934",
-  // border:'1px double #fff' 
-  borderStyle:'double'
+  alignItems: "center",
+  // border:'1px double #fff'
+  borderStyle: "double",
 }
 
 const Home = () => {
@@ -45,11 +48,20 @@ const Home = () => {
       <div style={containerStyle} ref={myRef}>
         <div style={innerStyle}>
           <h1 style={titleStyle}>
-            Hi, I am Yuchen. 
-            <br />A full-stack engineer.{" "}
-            <br />Love building things.
+            Hi, I am Yuchen.
+            <br />A full-stack engineer. <br />
+            Love building things.
           </h1>
-          <button style={btnStyle} onClick={()=>navigate(`/about-me`)}>Know More</button>
+          <button style={btnStyle} onClick={() => navigate(`/about-me`)}>
+            Know More{" "}
+            <FiArrowRight
+              size="2em"
+              style={{
+                position: "absolute",
+                right: "-25%",
+              }}
+            />
+          </button>
         </div>
       </div>
     </Layout>

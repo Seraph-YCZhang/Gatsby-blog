@@ -25,6 +25,7 @@ const projects = [
     description: "React/ Redux/ Firebase",
     bg: crwn,
     github: "https://github.com/Seraph-YCZhang/e-commerce-react",
+    link: "https://crwn-cloting-live.herokuapp.com/",
   },
   {
     title: "Advertisement System",
