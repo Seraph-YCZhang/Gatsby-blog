@@ -6,27 +6,38 @@ import { useScrollTo } from "../hooks/useScrollTo"
 import styles from "./projects.module.scss"
 import crwn from "../../static/crwn.png"
 import inv from "../../static/invub.png"
+import postit from "../../static/postit.png"
 const projects = [
   {
-    title: "E-Commerce Website",
-    description: "React/ Redux/ Firebase",
-    bg: crwn,
+    title: "Postit Forum",
+    description: "Typescript/ Next.js/ GraphQL/ Express.js/ PostgreSQL",
+    bg: postit,
+    github: "https://github.com/Seraph-YCZhang/typescript-reddit-web",
   },
   {
     title: "Wechat Crawler",
     description: "Python/ MySQL",
     bg: "https://smartproxy.com/wp-content/uploads/2020/06/Scraping-FAQ.svg",
+    github: "https://github.com/Seraph-YCZhang/WeixinCrawler",
+  },
+  {
+    title: "E-Commerce Website",
+    description: "React/ Redux/ Firebase",
+    bg: crwn,
+    github: "https://github.com/Seraph-YCZhang/e-commerce-react",
   },
   {
     title: "Advertisement System",
     description: "Java/ SpringCloud/ MySQL",
     bg:
       "https://thehimalayantimes.com/wp-content/uploads/2015/07/httpaimsportal.com_.jpg",
+    github: "https://github.com/Seraph-YCZhang/AdSystem-SpringCloud",
   },
   {
     title: "Invenst Club Website",
     description: "Javascript/ PHP/ MySQL",
     bg: inv,
+    link: "https://invenst.cse.buffalo.edu/index.php",
   },
 ]
 const Projects = () => {

@@ -22,6 +22,7 @@ const innerStyle = {
 }
 const titleStyle = {
   maxWidth: "100%",
+  lineHeight:"3.5rem"
 }
 const btnStyle = {
   display: "block",
@@ -44,8 +45,9 @@ const Home = () => {
       <div style={containerStyle} ref={myRef}>
         <div style={innerStyle}>
           <h1 style={titleStyle}>
-            Hi, here is Yuchen. <br />A software engineer can work in both
-            front-end and back-end.{" "}
+            Hi, I am Yuchen. 
+            <br />A full-stack engineer.{" "}
+            <br />Love building things.
           </h1>
           <button style={btnStyle} onClick={()=>navigate(`/about-me`)}>Know More</button>
         </div>

@@ -1,4 +1,5 @@
 import React from "react"
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai"
 import FadeInSection from "./fadeInSection"
 import styles from "./project.module.scss"
 
@@ -12,7 +13,15 @@ const Project = ({ proj }) => {
 
       <section className={styles.show}>
         <FadeInSection>
-          <p>{proj.title}</p>
+          <p className={styles.title}>
+            {proj.github ? (
+              <AiFillGithub onClick={() => window.open(proj.github)} />
+            ) : null}
+            {proj.link ? (
+              <AiOutlineLink onClick={() => window.open(proj.link)} />
+            ) : null}
+            {proj.title}
+          </p>
           <div>{proj.description}</div>
         </FadeInSection>
       </section>

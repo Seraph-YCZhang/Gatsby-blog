@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <nav className={style.header}>
       <div style={{ display: "flex", alignItems: "center", marginLeft:'2rem' }}>
-        <img src={logo} className={style.logo} alt="YC" />
+        {/* <img src={logo} className={style.logo} alt="YC" /> */}
         <Link className={`${style["mainTitle"]}`} to="/">
           {data.site.siteMetadata.author}
         </Link>
