@@ -18,6 +18,7 @@ const Resume = () => {
           minHeight: "100vh",
           background: "#252934",
           padding: "3rem 0",
+          overflow: "hidden",
         }}
       >
         {/* <div
