@@ -19,13 +19,13 @@ const projects = [
     title: "Git commits visualization",
     description: "Golang",
     bg: git,
-    github: "https://github.com/Seraph-YCZhang/WeixinCrawler",
+    github: "https://github.com/Seraph-YCZhang/git-stats",
   },
   {
     title: "Wechat Crawler",
     description: "Python/ MySQL",
     bg: "https://smartproxy.com/wp-content/uploads/2020/06/Scraping-FAQ.svg",
-    github: "https://github.com/Seraph-YCZhang/git-stats",
+    github: "https://github.com/Seraph-YCZhang/WeixinCrawler",
   },
   {
     title: "E-Commerce Website",
