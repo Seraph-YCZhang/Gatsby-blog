@@ -7,6 +7,7 @@ import styles from "./projects.module.scss"
 import crwn from "../../static/crwn.png"
 import inv from "../../static/invub.png"
 import postit from "../../static/postit.png"
+import git from "../../static/git.png"
 const projects = [
   {
     title: "Postit Forum",
@@ -15,10 +16,16 @@ const projects = [
     github: "https://github.com/Seraph-YCZhang/typescript-reddit-web",
   },
   {
+    title: "Git commits visualization",
+    description: "Golang",
+    bg: git,
+    github: "https://github.com/Seraph-YCZhang/WeixinCrawler",
+  },
+  {
     title: "Wechat Crawler",
     description: "Python/ MySQL",
     bg: "https://smartproxy.com/wp-content/uploads/2020/06/Scraping-FAQ.svg",
-    github: "https://github.com/Seraph-YCZhang/WeixinCrawler",
+    github: "https://github.com/Seraph-YCZhang/git-stats",
   },
   {
     title: "E-Commerce Website",
