@@ -5,6 +5,7 @@ import { useScrollTo } from "../hooks/useScrollTo"
 import { Document, Page, pdfjs } from "react-pdf"
 import styles from "./resume.module.scss"
 import resume from "../../static/resumepdf.pdf"
+import { FiFile } from "react-icons/fi"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 const Resume = () => {
   const myRef = useRef(null)
@@ -41,17 +42,20 @@ const Resume = () => {
           >
             <Page pageNumber={1} />
           </Document>
-          <p
+          <button
             style={{
-              textAlign: "center",
-              color: "#ffffff",
+              display: "block",
+              margin: "0 auto",
               fontSize: "1.5rem",
               cursor: "pointer",
+              borderRadius: "0.5rem",
             }}
             onClick={() => window.open(resume)}
           >
-            Click to view file
-          </p>
+            <p style={{ display: "flex", alignItems: "center" }}>
+              <FiFile style={{ marginRight: "1rem" }} /> Open File
+            </p>
+          </button>
         </div>
       </div>
     </Layout>
