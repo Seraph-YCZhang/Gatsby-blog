@@ -8,6 +8,7 @@ import crwn from "../../static/crwn.png"
 import inv from "../../static/invub.png"
 import postit from "../../static/postit.png"
 import git from "../../static/git.png"
+import todo from "../../static/todo.png"
 const projects = [
   {
     title: "Postit Forum",
@@ -20,6 +21,12 @@ const projects = [
     description: "Golang",
     bg: git,
     github: "https://github.com/Seraph-YCZhang/git-stats",
+  },
+  {
+    title: "Draggabel Todo List",
+    description: "Typescript/ Next.js/ react-beautiful-dnd/ tailwind",
+    bg: todo,
+    github: "https://github.com/Seraph-YCZhang/todo_app_nextjs",
   },
   {
     title: "Wechat Crawler",
