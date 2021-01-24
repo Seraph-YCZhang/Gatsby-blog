@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "Draggabel Todo List",
-    description: "Typescript/ Next.js/ react-beautiful-dnd/ tailwind",
+    description: "Typescript/ Next.js/ Django/ tailwind",
     bg: todo,
     github: "https://github.com/Seraph-YCZhang/todo_app_nextjs",
   },
